@@ -13,4 +13,4 @@ function convertBinaryToDecimal(number) {
   }
   return total;
 }
-console.log(convertBinaryToDecimal(110010));
+
