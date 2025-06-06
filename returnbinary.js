@@ -14,3 +14,10 @@ function convertBinaryToDecimal(number) {
   return total;
 }
 
+const input = document.getElementById("input");
+const submit = document.getElementById("submit");
+
+submit.addEventListener("click", () => {
+  const display = document.getElementById("display");
+  display.innerHTML = convertBinaryToDecimal(input.value);
+});
