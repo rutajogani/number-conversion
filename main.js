@@ -1,3 +1,6 @@
+import {convertDecimalToBinary} from "./convertDecimalToBinary.js";
+import { convertBinaryToDecimal } from "./convertBinaryToDecimal.js";
+
 const decimalInput = document.getElementById("decimal-input");
 const binaryInput = document.getElementById("binary-input");
 

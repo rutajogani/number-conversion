@@ -1,4 +1,4 @@
-function convertBinaryToDecimal(number) {
+export function convertBinaryToDecimal(number) {
   const binary = number.toString();
   let total = 0;
   let index = 0;

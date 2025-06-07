@@ -1,4 +1,4 @@
-function convertDecimalToBinary(number) {
+export function convertDecimalToBinary(number) {
   if (number === 0) {
     return 0;
   }
