@@ -4,6 +4,7 @@
 
     Ex.you give 10 number in input and you will get 1010 in binary number 
 
+![image](https://github.com/user-attachments/assets/2fd904ce-d1a5-4e95-ac30-a87f45a53b55)
 
 
 ### if you want to convert in binary to decimal so you can do it like. 
