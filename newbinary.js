@@ -44,25 +44,32 @@ function convertBinaryToDecimal(number) {
   return total;
 }
 
-const input = document.getElementById("input");
-const submit = document.getElementById("submit");
+const decimalInput = document.getElementById("decimal-input");
+const binaryInput = document.getElementById("binary-input");
 
-submit.addEventListener("click", () => {
-  const display_1 = document.getElementById("display");
-  display_1.innerHTML = convertDecimalToBinary(input.value);
+const moveToDecimal = document.getElementById("move-to-decimal");
+const moveToBinary = document.getElementById("move-to-binary");
+
+const convertBinary = document.getElementById("convert-binary");
+convertBinary.addEventListener("click", () => {
+  const binaryResult = document.getElementById("binary-result");
+  binaryResult.innerHTML = convertDecimalToBinary(decimalInput.value);
 });
 
-const add = document.getElementById("add");
-const button = document.getElementById("button");
-
-button.addEventListener("click", () => {
-  const display = document.getElementById("div");
-  display.innerHTML = convertBinaryToDecimal(add.value);
+moveToBinary.addEventListener("click", () => {
+  const binaryResult = document.getElementById("binary-result");
+  const binaryInput = document.getElementById("binary-input");
+  binaryInput.value = binaryResult.innerHTML;
 });
 
-const convert_d =document.getElementById("convert_d");
-const convert_b =document.getElementById("convert_b");
+const convertDecimal = document.getElementById("convert-decimal");
+convertDecimal.addEventListener("click", () => {
+  const decimalResult = document.getElementById("decimal-result");
+  decimalResult.innerHTML = convertBinaryToDecimal(binaryInput.value);
+});
 
-convert_d.addEventListener("click", () => {
-  
-})
+moveToDecimal.addEventListener("click", () => {
+  const decimalResult = document.getElementById("decimal-result");
+  const decimalInput = document.getElementById("decimal-input");
+  decimalInput.value = decimalResult.innerHTML;
+});
