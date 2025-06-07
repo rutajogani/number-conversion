@@ -27,10 +27,3 @@ function convertDecimalToBinary(number) {
   }
   return binary;
 }
-const input = document.getElementById("input");
-
-const submit = document.getElementById("submit");
-submit.addEventListener("click", () => {
-  const display_1 = document.getElementById("display");
-  display_1.innerHTML = convertDecimalToBinary(input.value);
-});
