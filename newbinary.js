@@ -45,9 +45,24 @@ function convertBinaryToDecimal(number) {
 }
 
 const input = document.getElementById("input");
-
 const submit = document.getElementById("submit");
+
 submit.addEventListener("click", () => {
   const display_1 = document.getElementById("display");
   display_1.innerHTML = convertDecimalToBinary(input.value);
 });
+
+const add = document.getElementById("add");
+const button = document.getElementById("button");
+
+button.addEventListener("click", () => {
+  const display = document.getElementById("div");
+  display.innerHTML = convertBinaryToDecimal(add.value);
+});
+
+const convert_d =document.getElementById("convert_d");
+const convert_b =document.getElementById("convert_b");
+
+convert_d.addEventListener("click", () => {
+  
+})
